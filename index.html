@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripAdvisor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="navbar">
+        <div class="navbar__logo">
+            <img src="logo.png" alt="TripAdvisor Logo">
+            <h2>Tripadvisor</h2>
+
+        </div>
+
+        <div class="navbar__heading">
+            <p>Discover</p>
+            <p>Trips</p>
+            <p>Review</p>
+            <p>Forums</p>
+        </div>
+
+        <div class="navbar__right">
+
+            <i class="fas fa-globe"></i> | INR
+            <button>Sign in</button>
+        </div>
+    </div>
+
+
+    <div class="header">
+        <div class="header__heading">
+            <h1>Where to?</h1>
+        </div>
+
+        <div class="header_content">
+            <img src="home_1.png" alt="">
+            <p>Search All</p>
+            <img src="Hotels.png" alt="">
+            <p>Hotels</p>
+            <img src="Things-to-do.png" alt="">
+            <p>Things to Do</p>
+            <img src="Restaurants.png" alt="">
+            <p>Restaurants</p>
+            <img src="flights.png" alt="">
+            <p>Flights</p>
+            <img src="Holiday-Homes.png" alt="">
+            <p>Holiday Homes</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="search">
+
+        <div class="search__content">
+            <img src="search-interface-symbol.png" alt="">
+            <input type="text" placeholder="Where are you going?">
+            <button>Search</button>
+        </div>
+    </div>
+
+
+    <div class="banner_image">
+        <div class="banner_content">
+            <p class="powered">Powdered by AI<span class="badge">BETS</span>
+            </p>
+            <h1>Plan your kind of trip</h1>
+            <p class="subtext">Get custom recs for all the things you're into with AI trip builder
+            </p>
+            <button class="start_btn">✨ Start a trip with AI</button>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="explore">
+        <div class="explore__heading">
+            <h3>Explore the world's most stunning seasides</h3>
+            <p>2025's Travellers' Choice Awards Best of the Best Beaches</p>
+        </div>
+        <div class="explore__slider-wrapper">
+            <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
+
+            <div class="explore__slider" id="slider">
+                <div class="slider_item">
+
+                    <img src="image _A.jpg" alt="Beach 1">
+
+                    <span class="caption">Maldives</span>
+                </div>
+                <div class="slider_item">
+                    <img src="image_B.jpg" alt="Beach 2">
+                    <span class="caption">Bali</span>
+                </div>
+                <div class="slider_item">
+                    <img src="image_C.jpg" alt="Beach 3">
+                    <span class="caption">Hawaii</span>
+                </div>
+                <div class="slider_item">
+                    <img src="image_D.jpg" alt="Beach 4">
+                    <span class="caption">Greece</span>
+                </div>
+                <div class="slider_item">
+                    <img src="image_E.jpg" alt="Beach 1">
+                    <span class="caption">Maldives</span>
+                </div>
+                <div class="slider_item">
+                    <img src="image_F.jpg" alt="Beach 3">
+                    <span class="caption">Hawaii</span>
+                </div>
+                <div class="slider_item">
+                    <img src="image _A.jpg" alt="Beach 4">
+                    <span class="caption">Greece</span>
+                </div>
+            </div>
+
+
+            <button class="slider-btn right" onclick="slideRight()">&#10095;</button>
+        </div>
+    </div>
+
+
+    <div class="top-experiences">
+        <h2>Top experiences on Tripadvisor</h2>
+        <p class="para">The best tours, activities and tickets</p>
+
+        <div class="experience-slider-wrapper">
+            <button class="scroll-btn left" onclick="slideAllLeft()">&#10094;</button>
+
+            <div class="experience-slider" id="experienceSlider">
+                <!-- Card 1 -->
+                <div class="experience-card">
+                    <div class="image-container">
+                        <img src="trip_1.jpg" alt="Railway Market" />
+                        <span class="badge">BEST SELLER</span>
+                        <span class="wishlist">&#9825;</span>
+                    </div>
+                    <h4>Half-Day Railway Market and Floating Market Tour in Thailand</h4>
+                    <div class="rating">
+                        <span>4.5</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="count">(2,043)</span>
+                    </div>
+                    <p class="price">from ₹2,568 per adult</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="image-container">
+                        <img src="trip_2.jpg" alt="Railway Market" />
+                        <span class="badge">BEST SELLER</span>
+                        <span class="wishlist">&#9825;</span>
+                    </div>
+                    <h4>Half-Day Railway Market and Floating Market Tour in Thailand</h4>
+                    <div class="rating">
+                        <span>4.5</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="count">(2,043)</span>
+                    </div>
+                    <p class="price">from ₹2,568 per adult</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="image-container">
+                        <img src="trip_3.jpg" alt="Railway Market" />
+                        <span class="badge">BEST SELLER</span>
+                        <span class="wishlist">&#9825;</span>
+                    </div>
+                    <h4>Half-Day Railway Market and Floating Market Tour in Thailand</h4>
+                    <div class="rating">
+                        <span>4.5</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="count">(2,043)</span>
+                    </div>
+                    <p class="price">from ₹2,568 per adult</p>
+                </div>
+                <div class="experience-card">
+                    <div class="image-container">
+                        <img src="trip_4.jpg" alt="Railway Market" />
+                        <span class="badge">BEST SELLER</span>
+                        <span class="wishlist">&#9825;</span>
+                    </div>
+                    <h4>Half-Day Railway Market and Floating Market Tour in Thailand</h4>
+                    <div class="rating">
+                        <span>4.5</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="count">(2,043)</span>
+                    </div>
+                    <p class="price">from ₹2,568 per adult</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="image-container">
+                        <img src="trip_5.jpg" alt="Railway Market" />
+                        <span class="badge">BEST SELLER</span>
+                        <span class="wishlist">&#9825;</span>
+                    </div>
+                    <h4>Half-Day Railway Market and Floating Market Tour in Thailand</h4>
+                    <div class="rating">
+                        <span>4.5</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="count">(2,043)</span>
+                    </div>
+                    <p class="price">from ₹2,568 per adult</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="image-container">
+                        <img src="trip_6.jpg" alt="Railway Market" />
+                        <span class="badge">BEST SELLER</span>
+                        <span class="wishlist">&#9825;</span>
+                    </div>
+                    <h4>Half-Day Railway Market and Floating Market Tour in Thailand</h4>
+                    <div class="rating">
+                        <span>4.5</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="count">(2,043)</span>
+                    </div>
+                    <p class="price">from ₹2,568 per adult</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="image-container">
+                        <img src="trip_7.jpg" alt="Railway Market" />
+                        <span class="badge">BEST SELLER</span>
+                        <span class="wishlist">&#9825;</span>
+                    </div>
+                    <h4>Half-Day Railway Market and Floating Market Tour in Thailand</h4>
+                    <div class="rating">
+                        <span>4.5</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="count">(2,043)</span>
+                    </div>
+                    <p class="price">from ₹2,568 per adult</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="image-container">
+                        <img src="trip_8.jpg" alt="Railway Market" />
+                        <span class="badge">BEST SELLER</span>
+                        <span class="wishlist">&#9825;</span>
+                    </div>
+                    <h4>Half-Day Railway Market and Floating Market Tour in Thailand</h4>
+                    <div class="rating">
+                        <span>4.5</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="count">(2,043)</span>
+                    </div>
+                    <p class="price">from ₹2,568 per adult</p>
+                </div>
+
+
+            </div>
+
+            <button class="scroll-btn right" onclick="slideAllRight()">&#10095;</button>
+        </div>
+    </div>
+
+
+    <div class="trip-banner">
+        <div class="trip-left">
+            <img src="image _A.jpg" alt="Trip Image" />
+        </div>
+        <div class="trip-middle">
+            <h2>Plan your trip your way</h2>
+            <p>Save your faves and more with Trips.</p>
+        </div>
+        <div class="trip-right">
+            <button class="trip-btn">Get started</button>
+        </div>
+    </div>
+
+
+    <div class="explore-section">
+        <h2>More to explore</h2>
+
+        <div class="slider-wrapper">
+            <button class="slider-btn left" onclick="scrollCards('left')">‹</button>
+
+            <div class="explore-cards" id="exploreCards">
+
+                <div class="card">
+                    <img src="more_1.jpg" alt="Hotel">
+                    <div class="like-icon">♡</div>
+                    <p><strong>7 Bangkok hotels that highlight</strong><br>Thailand's spectacular architecture</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="more_2.jpg" alt="Tokyo">
+                    <div class="like-icon">♡</div>
+                    <p><strong>3 days in Tokyo:</strong> The perfect itinerary</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="more_3.jpg" alt="Bali">
+                    <div class="like-icon">♡</div>
+                    <p><strong>Where Bali’s best chefs go on their</strong><br>days off</p>
+
+                </div>
+                <div class="card">
+                    <img src="more_4.jpg" alt="Hotel">
+                    <div class="like-icon">♡</div>
+                    <p><strong>7 Bangkok hotels that highlight</strong><br>Thailand's spectacular architecture</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="more_5.jpg" alt="Tokyo">
+                    <div class="like-icon">♡</div>
+                    <p><strong>3 days in Tokyo:</strong> The perfect itinerary</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="more_6.jpg" alt="Bali">
+                    <div class="like-icon">♡</div>
+                    <p><strong>Where Bali’s best chefs go on their</strong><br>days off</p>
+                    <div class="arrow-btn">→</div>
+                </div>
+
+                <div class="card">
+                    <img src="more_7.jpg" alt="Hotel">
+                    <div class="like-icon">♡</div>
+                    <p><strong>7 Bangkok hotels that highlight</strong><br>Thailand's spectacular architecture</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="more_8.jpg" alt="Tokyo">
+                    <div class="like-icon">♡</div>
+                    <p><strong>3 days in Tokyo:</strong> The perfect itinerary</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="more_8.jpg" alt="Bali">
+                    <div class="like-icon">♡</div>
+                    <p><strong>Where Bali’s best chefs go on their</strong><br>days off</p>
+                    <div class="arrow-btn">→</div>
+                </div>
+
+                <div class="card">
+                    <img src="more_9.jpg" alt="Bali">
+                    <div class="like-icon">♡</div>
+                    <p><strong>Where Bali’s best chefs go on their</strong><br>days off</p>
+                    <div class="arrow-btn">→</div>
+                </div>
+
+
+
+            </div>
+
+            <button class="slider-btn right" onclick="scrollCards('right')">›</button>
+        </div>
+    </div>
+
+
+
+    <div class="trip-container">
+        <h2>Dream Your Next Trip</h2>
+        <p>Weekend getaways from Tiruppur</p>
+
+        <div class="slider-wrapper">
+            <button class="slide__btn left">‹</button>
+
+            <div class="card-slider">
+                <div class="card">
+                    <img src="dream_1.jpg" alt="Rameswaram" />
+                    <div class="card-title">Rameswaram, India</div>
+                </div>
+                <div class="card">
+                    <img src="dream_2.jpg" alt="Mahabalipuram" />
+                    <div class="card-title">Mahabalipuram, India</div>
+                </div>
+                <div class="card">
+                    <img src="dream_3.jpg" alt="Varkala" />
+                    <div class="card-title">Varkala Town, India</div>
+                </div>
+                <div class="card">
+                    <img src="dream_4.jpg" alt="Tirupati" />
+                    <div class="card-title">Tirupati, India</div>
+                </div>
+                <div class="card">
+                    <img src="dream_5.jpg" alt="Rameswaram" />
+                    <div class="card-title">Rameswaram, India</div>
+                </div>
+                <div class="card">
+                    <img src="dream_6.jpg" alt="Mahabalipuram" />
+                    <div class="card-title">Mahabalipuram, India</div>
+                </div>
+                <div class="card">
+                    <img src="dream_7.jpg" alt="Varkala" />
+                    <div class="card-title">Varkala Town, India</div>
+                </div>
+                <div class="card">
+                    <img src="dream_8.jpg" alt="Tirupati" />
+                    <div class="card-title">Tirupati, India</div>
+                </div>
+                <div class="card">
+                    <img src="dream_9.jpg" alt="Rameswaram" />
+                    <div class="card-title">Rameswaram, India</div>
+                </div>
+                <div class="card">
+                    <img src="dream_10.jpg" alt="Mahabalipuram" />
+                    <div class="card-title">Mahabalipuram, India</div>
+                </div>
+                <div class="card">
+                    <img src="dream_11.jpg" alt="Varkala" />
+                    <div class="card-title">Varkala Town, India</div>
+                </div>
+                <div class="card">
+                    <img src="dream_12.jpg" alt="Tirupati" />
+                    <div class="card-title">Tirupati, India</div>
+                </div>
+            </div>
+
+            <button class="slide__btn right">›</button>
+        </div>
+    </div>
+
+
+    <div class="trip-wrapper">
+        <!-- <h2 class="trip-heading">Top destinations for your next holiday</h2> -->
+        <p class="trip-subtext">Top destinations for your next holiday</p>
+
+        <div class="carousel-container">
+            <button class="carousel-btn btn-left">‹</button>
+
+            <div class="carousel-track">
+                <div class="carousel-card">
+                    <img src="holi_1.jpg" alt="Rameswaram" />
+                    <div class="carousel-caption">Rameswaram, India</div>
+                </div>
+                <div class="carousel-card">
+                    <img src="holo_2.jpg" alt="Mahabalipuram" />
+                    <div class="carousel-caption">Mahabalipuram, India</div>
+                </div>
+                <div class="carousel-card">
+                    <img src="holi_3.jpg" alt="Varkala" />
+                    <div class="carousel-caption">Varkala Town, India</div>
+                </div>
+                <div class="carousel-card">
+                    <img src="holi_4.jpg" alt="Tirupati" />
+                    <div class="carousel-caption">Tirupati, India</div>
+                </div>
+                <div class="carousel-card">
+                    <img src="holi_5.jpg" alt="Rameswaram" />
+                    <div class="carousel-caption">Rameswaram, India</div>
+                </div>
+                <div class="carousel-card">
+                    <img src="holi_6.jpg" alt="Mahabalipuram" />
+                    <div class="carousel-caption">Mahabalipuram, India</div>
+                </div>
+                <div class="carousel-card">
+                    <img src="holi_7.jpg" alt="Varkala" />
+                    <div class="carousel-caption">Varkala Town, India</div>
+                </div>
+                <div class="carousel-card">
+                    <img src="holi_8.jpg" alt="Tirupati" />
+                    <div class="carousel-caption">Tirupati, India</div>
+                </div>
+                <div class="carousel-card">
+                    <img src="holi_9.jpg" alt="Rameswaram" />
+                    <div class="carousel-caption">Rameswaram, India</div>
+                </div>
+                <div class="carousel-card">
+                    <img src="holi_10.jpg" alt="Mahabalipuram" />
+                    <div class="carousel-caption">Mahabalipuram, India</div>
+                </div>
+
+            </div>
+
+            <button class="carousel-btn btn-right">›</button>
+        </div>
+    </div>
+
+
+    <div class="ban_container">
+        <div class="ban_left">
+            <img src="caption (1).jpg" alt="Watch The Wanderer" />
+        </div>
+        <div class="ban_right">
+            <div class="sponsor">
+                <img src="logo.png" alt="Tripadvisor Logo" />
+                <span>Sponsored by <a href="#">Wanderlab</a></span>
+            </div>
+            <h1>Watch The Wanderer</h1>
+            <p>Tripadvisor’s award-winning travel series, now streaming on Amazon Prime Video</p>
+            <button>Learn more</button>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h4>About Tripadvisor</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Resources and Policies</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Trust & Safety</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#">Write a review</a></li>
+                    <li><a href="#">Add a Place</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Travellers' Choice</a></li>
+                    <li><a href="#">Help Centre</a></li>
+                    <li><a href="#">Travel Stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Do Business With Us</h4>
+                <ul>
+                    <li><a href="#">Owners & DMO/CVB</a></li>
+                    <li><a href="#">Business Advantage</a></li>
+                    <li><a href="#">Sponsored Placements</a></li>
+                    <li><a href="#">Access our Content API</a></li>
+                </ul>
+                <h4>Get The App</h4>
+                <ul>
+                    <li><a href="#">iPhone App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Tripadvisor Sites</h4>
+                <ul>
+                    <li><a href="#">Book tours and attraction tickets on <strong>Viator</strong></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <div class="footer-left">
+                <img src="logo.png"
+                    alt="Tripadvisor" />
+                <p>© 2025 Tripadvisor LLC All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy and Cookies Statement</a>
+                    <a href="#">Cookie consent</a>
+                    <a href="#">Site Map</a>
+                    <a href="#">How the site works</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-options">
+                    <select>
+                        <option>₹ INR</option>
+                    </select>
+                    <select>
+                        <option>India</option>
+                    </select>
+                </div>
+                <div class="footer-social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-x-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let scrollAmount = 0;
+
+        function slideRight() {
+            const slider = document.getElementById("slider");
+            scrollAmount += 310;
+            slider.scrollTo({
+                left: scrollAmount,
+                behavior: "smooth"
+            });
+        }
+
+        function slideLeft() {
+            const slider = document.getElementById("slider");
+            scrollAmount -= 310;
+            if (scrollAmount < 0) scrollAmount = 0;
+            slider.scrollTo({
+                left: scrollAmount,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+    <script>
+        let scrollcal = 0;
+
+        function slideAllRight() {
+            const slider = document.getElementById("experienceSlider");
+            const maxScroll = slider.scrollWidth - slider.clientWidth;
+
+            scrollcal += 310;
+            if (scrollcal > maxScroll) {
+                scrollcal = maxScroll;
+            }
+
+            slider.scrollTo({
+                left: scrollcal,
+                behavior: "smooth"
+            });
+        }
+
+        function slideAllLeft() {
+            const slider = document.getElementById("experienceSlider");
+
+            scrollcal -= 310;
+            if (scrollcal < 0) {
+                scrollcal = 0;
+            }
+
+            slider.scrollTo({
+                left: scrollcal,
+                behavior: "smooth"
+            });
+        }
+
+
+        function scrollCards(direction) {
+            const container = document.getElementById('exploreCards');
+            const scrollAmount = 270;
+
+            if (direction === 'left') {
+                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+
+
+
+        const slider = document.querySelector('.card-slider');
+        document.querySelector('.slide__btn.left').addEventListener('click', () => {
+            slider.scrollBy({ left: -220, behavior: 'smooth' });
+        });
+        document.querySelector('.slide__btn.right').addEventListener('click', () => {
+            slider.scrollBy({ left: 220, behavior: 'smooth' });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const track = document.querySelector('.carousel-track');
+            const btnLeft = document.querySelector('.btn-left');
+            const btnRight = document.querySelector('.btn-right');
+
+            const scrollAmount = 280; // Adjust if your card width changes
+
+            btnLeft.addEventListener('click', () => {
+                track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
+
+            btnRight.addEventListener('click', () => {
+                track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+        });
+
+
+    </script>
+
+
+
+
+</body>
+
+
+
+
+</html>
